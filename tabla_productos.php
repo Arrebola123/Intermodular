@@ -1,16 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tienda_relojes";
-
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
+include 'conexion.php';
 
 // Consulta SQL para obtener los últimos 10 productos, incluyendo la descripción
 $sql = "SELECT p.id, p.nombre, p.numero_de_modelo, p.precio, p.stock_disponible, 

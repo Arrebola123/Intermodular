@@ -1,16 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tienda_relojes";
-
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
+include 'conexion.php';
 
 // Consulta SQL para obtener los usuarios con su rol específico
 $sql = "SELECT u.id, u.dni, u.nombre, u.administrador, c.correo, e.fecha_contratacion, e.rol 

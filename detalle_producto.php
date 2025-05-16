@@ -1,18 +1,7 @@
 <?php
 session_start(); 
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tienda_relojes";
-
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
+include 'conexion.php';
 
 // Verificar si se pasa un ID válido en la URL
 if (isset($_GET["id"]) && is_numeric($_GET["id"])) {

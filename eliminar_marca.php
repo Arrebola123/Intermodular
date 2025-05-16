@@ -1,16 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tienda_relojes";
-
-// Conectar a la base de datos
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
+include 'conexion.php';
 
 // Verificar si se recibió el ID del producto
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["id_marca"])) {

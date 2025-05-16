@@ -1,19 +1,12 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tienda_relojes";
+include 'conexion.php';
 
 // Verificar si el usuario está logueado
 if (!isset($_SESSION['usuario_id'])) {
     die("⚠ Debes iniciar sesión para eliminar productos del carrito.");
 }
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("❌ Conexión fallida: " . $conn->connect_error);
-}
 
 $usuario_id = $_SESSION['usuario_id'];
 

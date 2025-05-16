@@ -1,18 +1,7 @@
 <?php
 session_start();  // Inicia la sesión para acceder a las variables de sesión
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tienda_relojes";
-
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
+include 'conexion.php';
 
 if (isset($_SESSION['usuario_id'])) {
     // Recuperar el ID del usuario desde la sesión
