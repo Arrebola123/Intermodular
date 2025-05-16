@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir categorias y proveedores</title>
+    <link rel="stylesheet" href="styles_formulario.css">
+</head>
+<body>
+    <header>
+      <div>
+        <button href="#" onclick="window.location.href= 'panel_control.html'">
+                  <span>Volver al panel de control</span>
+                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                 <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+                </button>
+        </div>
+      <h2>Añadir categorias y productos</h2>
+        <form action="tabla_categoriasYProveedores.php" method="get">
+          <button class="button_registrado">
+            <span>Ver datos usuarios</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+           <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+          </button>
+        </form>
+     </header>
+    <div class="form-container">
+  
+      <!-- Sección: Añadir Categoria -->
+      <fieldset class="section">
+        <legend><i>Añadir categoria</i></legend>
+        <form action="categorias.php" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre <span>*</span> </label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+      <button type="submit" class="submit-btn">
+        <span>GUARDAR INFORMACIÓN</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+        <path d="M1,5 L11,5"></path>
+       <polyline points="8 1 12 5 8 9"></polyline>
+      </svg>
+      </button>
+    </div>
+  </form>
+
+    <!-- Sección: Añadir Proveedor -->
+    <div class="form-container">
+    <fieldset class="section">
+        <legend><i>Añadir proveedor</i></legend>
+        <form action="proveedores.php" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre <span>*</span> </label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="contacto">Contacto <span>*</span> </label>
+            <input type="tel" id="contacto" name="contacto" required>
+          </div>
+          <div class="form-group">
+            <label for="direccion">Dirección <span>*</span> </label>
+            <input type="text" id="direccion" name="direccion" required>
+          </div>
+      <button type="submit" class="submit-btn">
+        <span>GUARDAR INFORMACIÓN</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+        <path d="M1,5 L11,5"></path>
+       <polyline points="8 1 12 5 8 9"></polyline>
+      </svg>
+      </button>
+    </div>
+  </form>
+</body>
+</html>

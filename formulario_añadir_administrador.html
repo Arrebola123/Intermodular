@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir admin</title>
+    <link rel="stylesheet" href="styles_formulario.css">
+</head>
+<body>
+    <header>
+        <div>
+            <button href="#" onclick="window.location.href= 'panel_control.html'">
+                      <span>Volver al panel de control</span>
+                      <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                     <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </button>
+                    </div>
+                    <h2>AÑADIR ADMINISTRADOR</h2>
+    </header>
+    <div class="form-container">
+    <fieldset class="section">
+        <form action="insertar_admin.php" method="post">
+            <div class="form-group">
+        <input type="text" name="dni" placeholder="Dni">
+    </div>
+    <div class="form-group">
+        <input type="text" name="nombre" placeholder="Nombre">
+    </div>
+    <div class="form-group">
+        <input type="password" name="contraseña" placeholder="Contraseña">
+    </div>
+    <div class="form-group">
+        <select name="rol" name="rol" id="rol">
+            <option value="Gerente de tienda">Gerente de tienda</option>
+            <option value="Vendedor especializado"> Vendedor especializado</option>
+            <option value="Relojero técnico / Reparador">Relojero técnico / Reparador</option>
+            <option value="Especialista en marketing y redes sociales">Especialista en marketing y redes sociales</option>
+            <option value="Encargado de inventario y logística">Encargado de inventario y logística</option>
+            <option value="Atención al cliente y servicio postventa">Atención al cliente y servicio postventa</option>
+        </select>
+        </div>
+        <button type="submit">
+            <span>Agregar</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+            </button>
+    </div>
+</form>
+    </fieldset>
+</body>
+</html>

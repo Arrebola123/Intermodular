@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Marca</title>
+    <link href="styles_formulario.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <button href="#" onclick="window.location.href= 'panel_control.html'">
+                      <span>Volver al panel de control</span>
+                      <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                     <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    </button>
+            </div>
+            <h2>Registro de Marca</h2>
+    <form action="tabla_marcas.php" method="get">
+        <button href="#">
+        <span>Ver marcas</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+        <path d="M1,5 L11,5"></path>
+       <polyline points="8 1 12 5 8 9"></polyline>
+      </svg>
+      </button>
+        </form>
+    </header>
+    <div class="form-container">
+        <form action="insertar-marcas.php" method="POST" enctype="multipart/form-data">
+            <div class="form-columns">
+                <div class="column">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="nombre">Nombre de la Marca</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="logo">Subir Logo</label>
+                            <input type="file" id="logo" name="logo" accept="image/*" required>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="btns">
+                <button type="submit"><span>Enviar</span></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

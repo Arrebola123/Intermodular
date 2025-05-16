@@ -1,0 +1,209 @@
+/* ✅ Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 📌 Contenedor principal */
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 📝 Texto e información */
+.content {
+    width: 50%;
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 48px;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #ddd;
+}
+
+/* 💰 Precio y botón */
+.precio {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.precio span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e67e22;
+    margin-right: 20px;
+}
+
+.btn {
+    background: #e67e22;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: #d35400;
+    transform: translateY(-3px);
+}
+
+/* 📸 Galería de imágenes */
+.image-gallery {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+
+.gallery-images {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+
+.gallery-item {
+    width: 100%;
+    display: none; /* Escondemos todas las imágenes al principio */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* 🔹 Botón "3D" */
+/* 🔹 Contenedor del botón 3D y el video */
+/* 🔹 Contenedor del botón 3D y el video */
+.TreeDButton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Espacio entre la imagen y el botón */
+    position: relative; /* Asegura que esté en su flujo normal */
+}
+
+/* 🔹 Estilos del botón 3D */
+.three-d-section {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.three-d-section:hover {
+    background-color: #d35400;
+    transform: scale(1.1);
+}
+
+/* 🔹 Estilos del iframe 3D */
+.sketchfab-embed-wrapper {
+    display: none;
+    margin-top: 20px; /* ESPACIADO debajo del botón*/
+}
+
+/* ✅ Hace que el iframe aparezca debajo del botón sin alterar la galería */
+ .sketchfab-embed-wrapper {
+    display: none;
+    margin-top: 20px;
+}
+
+.hidden-checkbox{
+    display: none;
+}
+
+/* 📱 Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content, .image-gallery {
+        width: 100%;
+    }
+}
+
+/* 📱 Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content, .image-gallery {
+        width: 100%;
+    }
+}

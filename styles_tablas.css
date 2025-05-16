@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F4F4;
+    color: rgb(128, 128, 128);
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #afafaf;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    max-width: 90%;
+    margin: 0 auto;
+    background: #ededed;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #d4d4d4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color:rgb(188, 188, 188);
+    color: white;
+    font-size: 18px;
+}
+
+tr:hover {
+    background-color: #ababab;
+}
+
+tr:nth-child(even) {
+    background-color:rgb(226, 226, 226);
+}
+
+tr:nth-child(even):hover {
+    background-color: #ababab;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    background: rgb(191, 191, 191);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: rgb(164, 164, 164);
+    transform: translateY(-2px);
+}
+
+
+
+td .delete_btn {
+    background: red;
+    color: white; 
+    padding: 8px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+td .delete_btn:hover{
+    background-color: rgb(222, 0, 0);
+}
